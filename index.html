@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/Logo.png" type="image/x-icon">
+    <title>Encriptador JS</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Logo.png">
+            <h2>Encriptador JS</h2>
+        </div>
+    </header>
+
+    <section class="base">
+        <div class="izquierda">
+            <textarea class="texto" id="texto" placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+        <div class="iconosmall">
+            <small>&#10069; Solo letras minúsculas y sin acentos</small>
+        </div>
+        <div class="botones">
+            <button class="boton1" type="submit" value="Encriptar" id="encriptar">Encriptar</button>
+            <button class="boton2" type="submit" value="Desencriptar" id="desencriptar">Descifrar</button>
+        </div>
+        <div class="derecha" id="vacio">
+            <img src="img/Muñeco.png" alt="Imagen de sujeto con una lupa observando un diamante" id="imagenSinMensaje">
+            <h2 id="sinMensaje">Ningún mensaje fue encontrado</h2>
+            <p id="descpripcionSinMensaje">Ingresa el mensaje que desees encriptar o desencriptar</p>
+        </div>
+        <div class="copiarPadre">
+            <textarea class="texto"  name="text" id="resultado"></textarea>
+            <button class="copiar" type="submit" value="Copiar" id="copiar">Copiar</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Encriptador elaborado por Jonathan Serrato.</p>
+        <p><span></span><a id="github" href="#"></a><span></span> <a id="linkedin" href="#"></a></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
